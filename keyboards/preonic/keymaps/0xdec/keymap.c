@@ -68,9 +68,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * ,-----------------------------------------------------------------------------------.
  * | SLEEP|  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |  F7  |  F8  |  F9  |  F10 |PRTSCR|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | SYM  |  F11 |  F12 |      |AU TOG| VOL+ |BL INC|COLMAK| GAME | MUSIC| MENU |SCRLCK|
+ * | SYM  |  F11 |  F12 |      |AU TOG| VOL+ |BL INC|COLMAK| GAME | MUSIC| MENU | PAUSE|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
- * | CAPS | PREV | STOP | PLAY | NEXT | VOL- |BL DEC| LEFT | DOWN |  UP  | RIGHT| PAUSE|
+ * | CAPS | PREV | STOP | PLAY | NEXT | VOL- |BL DEC| LEFT | DOWN |  UP  | RIGHT|SCRLCK|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
  * |      | BACK | STOP | RFRSH| FRWRD| MUTE |BL TOG| HOME | PGDN | PGUP | END  |INSERT|
  * |------+------+------+------+------+------+------+------+------+------+------+------|
@@ -79,8 +79,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = {
   {KC_SLEP,KC_F1  ,KC_F2  ,KC_F3  ,KC_F4  ,KC_F5  ,KC_F6  ,KC_F7  ,KC_F8  ,KC_F9  ,KC_F10 ,KC_PSCR},
-  {XXXXXXX,KC_F11 ,KC_F12 ,XXXXXXX,AU_TOG ,KC_VOLU,BL_INC ,COLEMAK,GAME   ,MU_TOG ,KC_MENU,KC_SLCK},
-  {KC_CAPS,KC_MPRV,KC_MSTP,KC_MPLY,KC_MNXT,KC_VOLD,BL_DEC ,KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,KC_PAUS},
+  {XXXXXXX,KC_F11 ,KC_F12 ,XXXXXXX,AU_TOG ,KC_VOLU,BL_INC ,COLEMAK,GAME   ,MU_TOG ,KC_MENU,KC_PAUS},
+  {KC_CAPS,KC_MPRV,KC_MSTP,KC_MPLY,KC_MNXT,KC_VOLD,BL_DEC ,KC_LEFT,KC_DOWN,KC_UP  ,KC_RGHT,KC_SLCK},
   {XXXXXXX,KC_WBAK,KC_WSTP,KC_WREF,KC_WFWD,KC_MUTE,BL_TOGG,KC_HOME,KC_PGDN,KC_PGUP,KC_END ,KC_INS },
   {RESET  ,_______,_______,_______,_______,KC_DEL ,_______,_______,_______,_______,_______,_______}
 }
