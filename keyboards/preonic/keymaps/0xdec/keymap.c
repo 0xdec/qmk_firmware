@@ -154,16 +154,19 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
       if (record->event.pressed) {
         set_single_persistent_default_layer(_COLEMAK);
       }
+      return false;
       break;
     case QWERTY:
       if (record->event.pressed) {
         set_single_persistent_default_layer(_QWERTY);
       }
+      return false;
       break;
     case GAMENUM:
       if (record->event.pressed) {
         set_single_persistent_default_layer(_GAMENUM);
       }
+      return false;
       break;
     case FN:
       if (record->event.pressed) {
@@ -173,6 +176,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         layer_off(_FN);
         update_tri_layer(_FN, _PN, _ADJUST);
       }
+      return false;
       break;
     case PN:
       if (record->event.pressed) {
@@ -182,6 +186,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         layer_off(_PN);
         update_tri_layer(_FN, _PN, _ADJUST);
       }
+      return false;
       break;
     default:
       return true;
